@@ -28,10 +28,13 @@ interface CreateInvoiceProps {
   reference: String;
   item: Object;
   attachments: Array;
-  quantity: Float32Array;
+  quantity: Float64Array;
+  amountPaid: Float64Array;
   type: String;
+  invoiceStatus: String;
   description: String;
-  totalInTax: Float32Array;
-  totalExTax: Float32Array;
+  totalInTax: Float64Array;
+  totalExTax: Float64Array;
 }
+
 export {SignupPayload, Login, CreateItemProps, CreateInvoiceProps};
